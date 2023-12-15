@@ -1,0 +1,285 @@
+
+/* General Style Improvements */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Header Section */
+#header {
+    background-color: #364860;
+    color: #FFF;
+    text-align: center;
+    padding: 100px 0;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #D5E3EB;
+    z-index: 10;
+}
+
+.navbar a:hover {
+    color: #4a90e2;
+    transition: color 0.2s;
+}
+
+/* Hero Section */
+.hero {
+    margin-top: 50px;
+    text-align: center;
+    background-color: #364860;
+    color: #FFF;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+}
+
+/* About Section */
+#about {
+    background-color: #FFF;
+    padding: 50px 0;
+}
+
+
+/* Portfolio Section */
+#portfolio {
+    background-color: #F6F8F9;
+    padding: 50px 0;
+}
+
+
+.portfolio-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+.portfolio-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.portfolio-info h3, .portfolio-info p {
+    margin: 0;
+    color: #333;
+}
+
+
+/* Resume Section */
+#resume {
+    background-color: #FFF;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#resume img {
+    max-width: 75%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#resume img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#resume p {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #F6F8F9;
+    padding: 50px 0;
+}
+
+/* Footer */
+#footer {
+    background-color: #FFD1DC;
+    color: #FFF;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-brand, .navbar-link {
+        font-size: 18px;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+}
+
+#about .row {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.profile-pic {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto;
+    margin-top: 60px
+}
+
+@media (max-width: 768px) {
+    #about .row {
+        flex-direction: column; /* Stack on smaller screens */
+    }
+}
+
+/* Update the styles for the "About Me" section */
+#about {
+    padding: 50px 0;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+}
+
+#about p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 1rem;
+    text-indent: 1em;
+}
+
+#header {
+    background-color: #FFB6C1;
+}
+
+.navbar {
+    background-color: #FFD1DC;
+}
+
+#about, #portfolio, #resume, #contact {
+    background-color: #FFF;
+}
+
+/* Testimonials Section */
+
+#testimonials h2 {
+    font-size: 1.5rem; /* Increase font size, adjust as needed */
+    line-height: 1.6; /* Optional: Adjust line height for better readability */
+    margin: 20px 0; /* Optional: Adjust spacing around the text */
+}
+
+#testimonials {
+    padding: 7% 15%;
+    text-align: center;
+    background-color: #FFD1DC;
+}
+
+.carousel-item {
+    padding: 0%;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+#press{
+    background-color: #FFD1DC;
+    text-align: center;
+}
+
+.press-logo {
+    width: 10%;
+    margin: 20px 20px 50px;
+}
+
+/* Style for the Project 2 images */
+.project-item .row {
+    margin-top: -20px;
+}
+
+.project-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.portfolio-header {
+    margin-bottom: 30px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: #fff;
+    margin-right: 15px;
+}
+
+/* Section Headings */
+.section-heading {
+    font-weight: bold;
+}
+
+.navbar.sticky-top {
+    background-color: #364860;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+.navbar.sticky-top .navbar-brand, .navbar.sticky-top .nav-link {
+    color: #FFF;
+}
+
+.sticky-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.smaller-project {
+    max-width: 500px;
+    height: auto;
+}
+
+/* Specific style for Project 6 */
+#portfolio .portfolio-item:nth-child(6) .portfolio-info {
+    bottom: 46%;
+}
+
+.about-heading, .portfolio-heading, .section-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#portfolio {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #ffffff;
+}
